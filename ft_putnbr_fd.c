@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 20:41:22 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 22:03:23 by ryamagis         ###   ########.fr       */
+/*   Created: 2023/09/10 22:16:03 by ryamagis          #+#    #+#             */
+/*   Updated: 2023/09/10 22:16:20 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(char const *s, char c)
+void ft_putnbr_fd(int n, int fd)
 {
-	int	i;
-	int j;
-
 	
-}
-
-char **ft_split(char const *s, char c)
-{
-
 }

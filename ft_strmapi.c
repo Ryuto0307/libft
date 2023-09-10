@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 20:41:22 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 22:03:23 by ryamagis         ###   ########.fr       */
+/*   Created: 2023/09/10 22:07:22 by ryamagis          #+#    #+#             */
+/*   Updated: 2023/09/10 22:51:08 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(char const *s, char c)
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
-	int j;
+	char	*str;
+	unsigned int	i;
 
-	
-}
-
-char **ft_split(char const *s, char c)
-{
-
+	i = 0;
+	if(!s)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!str)
+		return (NULL);
+	while(s[i])
+	{
+		str[i] = f(1, s[i]);
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }

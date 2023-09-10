@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 20:41:22 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 22:03:23 by ryamagis         ###   ########.fr       */
+/*   Created: 2023/09/10 22:08:24 by ryamagis          #+#    #+#             */
+/*   Updated: 2023/09/10 22:34:41 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(char const *s, char c)
+void ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int	i;
-	int j;
+	unsigned int	i;
 
-	
-}
-
-char **ft_split(char const *s, char c)
-{
-
+	i = 0;
+	if(!s)
+		return ((void)NULL);
+		while (s[i])
+		{
+			f(i, s + i);
+			i++;
+		}
 }

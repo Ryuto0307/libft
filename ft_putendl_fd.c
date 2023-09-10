@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 20:41:22 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 22:03:23 by ryamagis         ###   ########.fr       */
+/*   Created: 2023/09/10 22:14:26 by ryamagis          #+#    #+#             */
+/*   Updated: 2023/09/10 22:20:04 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(char const *s, char c)
+void ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-	int j;
-
-	
-}
-
-char **ft_split(char const *s, char c)
-{
-
+	if (!s)
+		return ((void)NULL);
+	write(fd, s,ft_strlen(s));
+	write(fd, "\n", 1);
 }
