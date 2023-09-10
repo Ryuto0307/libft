@@ -1,5 +1,5 @@
 NAME             =    libft.a
-SRCS             =    ft_isalpha.c ft_isdigit.c ft_substr.c ft_isascii.c ft_isprint.c ft_strlen.c
+SRCS             =    ft_isalpha.c ft_strjoin.c ft_isdigit.c ft_substr.c ft_isascii.c ft_isprint.c ft_strlen.c
 
 BONUS            =    ft_lstnew.c\
                     ft_lstadd_front.c\

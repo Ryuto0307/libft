@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 18:48:20 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 20:14:17 by ryamagis         ###   ########.fr       */
+/*   Created: 2023/09/10 20:15:37 by ryamagis          #+#    #+#             */
+/*   Updated: 2023/09/10 20:30:21 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start,size_t len)
+char *ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	size_t	i;
-	size_t	j;
+	size_t i;
+	size_t j;
 
 	i = 0;
 	j = 0;
-	if(!s)
-		return (NULL);
-	str = (char*)malloc(sizeof(*s) * (len + 1));
+	str = (char*)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!str)
 		return (NULL);
-	//if (start >= ft_strlen(s) || len == 0)
-	//	return (ft_strdup(""));
-	while (s[i])
+	while (s1[i])
 	{
-		if (i >= start && j < len)
-		{
-			str[j] = s[i];
-			j++;
-		}
+		str[j] = s1[i];
+		j++;
+		i++;
+	}
+	i = 0;
+	while (s2[i])
+	{
+		str[j] = s2[i];
+		j++;
 		i++;
 	}
 	str[j] = '\0';
