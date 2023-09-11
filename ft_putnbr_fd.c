@@ -6,7 +6,7 @@
 /*   By: ryamagis <ryamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 22:16:03 by ryamagis          #+#    #+#             */
-/*   Updated: 2023/09/10 22:16:20 by ryamagis         ###   ########.fr       */
+/*   Updated: 2023/09/11 16:23:10 by ryamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void ft_putnbr_fd(int n, int fd)
 {
+	unsigned int nbr;
 	
 }
